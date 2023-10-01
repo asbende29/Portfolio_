@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'poppins';
+        }
+
+        body {
+            width: 100vw;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+        h1 {
+           transform: translateY(-20rem);
+           font-size: 7rem;
+           color: #054f2d;
+        }
+        #soon{
+            font-size: 7rem;
+           color: #054f2d;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+
+
+        <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 600" xmlns="http://www.w3.org/2000/svg"
+            class="transition duration-300 ease-in-out delay-150">
+            <path
+                d="M 0,600 C 0,600 0,200 0,200 C 61.77990430622009,172.78468899521533 123.55980861244018,145.56937799043064 238,148 C 352.4401913875598,150.43062200956936 519.5406698564592,182.50717703349284 628,209 C 736.4593301435408,235.49282296650716 786.2775119617226,256.4019138755981 875,249 C 963.7224880382774,241.59808612440193 1091.3492822966507,205.88516746411483 1192,193 C 1292.6507177033493,180.11483253588517 1366.3253588516745,190.05741626794259 1440,200 C 1440,200 1440,600 1440,600 Z"
+                stroke="none" stroke-width="0" fill="#00d084" fill-opacity="0.53"
+                class="transition-all duration-300 ease-in-out delay-150 path-0" transform="rotate(-180 720 300)">
+            </path>
+            <path
+                d="M 0,600 C 0,600 0,400 0,400 C 112.5263157894737,435.92344497607655 225.0526315789474,471.8468899521531 306,450 C 386.9473684210526,428.1531100478469 436.31578947368416,348.53588516746413 525,356 C 613.6842105263158,363.46411483253587 741.684210526316,458.0095693779905 859,472 C 976.315789473684,485.9904306220095 1082.9473684210527,419.4258373205741 1178,394 C 1273.0526315789473,368.5741626794259 1356.5263157894738,384.2870813397129 1440,400 C 1440,400 1440,600 1440,600 Z"
+                stroke="none" stroke-width="0" fill="#00d084" fill-opacity="1"
+                class="transition-all duration-300 ease-in-out delay-150 path-1" transform="rotate(-180 720 300)">
+            </path>
+
+
+        </svg>
+        <h1>Uploading <span id="soon"></span></h1>
+    </div>
+    <script>
+        const dot =document.getElementById('soon')
+const soon =()=>{
+    setTimeout(() => {
+        dot.innerHTML='.'
+    }, 1000);
+    setTimeout(() => {
+        dot.innerHTML='..'
+    }, 2000);
+    setTimeout(() => {
+        dot.innerHTML='...'
+    }, 3000);
+}
+setInterval(soon,4000)
+
+    </script>
+</body>
+
+</html>
