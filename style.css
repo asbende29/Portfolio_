@@ -307,7 +307,8 @@ svg {
 .s2 img {
   height: 300px;
   /* width: 500px; */
-  width: 100%;
+  object-fit: contain;
+  /* width: 100%; */
   border-radius: 20px;
   box-shadow: 3px 5px 8px rgba(128, 128, 128, 0.755);
 }
@@ -511,4 +512,10 @@ input {
     display: block;
     flex-direction: column-reverse;
   }
+}
+
+nav ul {
+  /* display: flex; */
+  display: block;
+  flex-wrap: wrap;
 }
