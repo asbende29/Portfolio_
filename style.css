@@ -100,6 +100,7 @@ nav ul li a:hover {
 .my_image {
   /* width: fit-content; */
   width: 50%;
+  border-radius: 20px;
 }
 
 .main h1 {
