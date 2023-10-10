@@ -148,7 +148,7 @@ nav ul li a:hover {
   font-size: 1.8rem;
   position: fixed;
   z-index: 100;
-  transform: translateY(-15rem);
+  transform: translateY(-25rem);
 }
 
 .socials ul li {
